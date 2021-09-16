@@ -1,0 +1,40 @@
+.ques
+{
+    background: lightgrey;
+    box-shadow: 0px 3px 10px 0px rgba(120, 120, 120,);
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-grow: inherit;
+    margin: 10px;
+    flex: 0.7;
+}
+
+.qtext {
+    font-weight: 500;
+    /* padding-top: 30px; */
+    color: rgb(29, 29, 29);
+    padding: 50px;
+    /* flex-wrap: wrap; */
+    line-height: 2;
+    resize: none;
+    text-overflow: clip;
+    padding: 40px;
+}
+
+.ans
+{
+    background: lightgrey;
+    box-shadow: 0px 3px 10px 0px rgba(120, 120, 120,);
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex: 0.3;
+    margin: 10px;
+}

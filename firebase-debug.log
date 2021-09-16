@@ -1,0 +1,51 @@
+[debug] [2021-02-16T20:41:06.497Z] ----------------------------------------------------------------------
+[debug] [2021-02-16T20:41:06.498Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sid Karthik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-16T20:41:06.498Z] CLI Version:   9.3.0
+[debug] [2021-02-16T20:41:06.498Z] Platform:      win32
+[debug] [2021-02-16T20:41:06.499Z] Node Version:  v15.4.0
+[debug] [2021-02-16T20:41:06.499Z] Time:          Wed Feb 17 2021 02:11:06 GMT+0530 (India Standard Time)
+[debug] [2021-02-16T20:41:06.499Z] ----------------------------------------------------------------------
+[debug] [2021-02-16T20:41:06.499Z] 
+[debug] [2021-02-16T20:41:06.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-16T20:41:06.505Z] > authorizing via signed-in user
+[debug] [2021-02-16T20:41:06.505Z] [iam] checking project bytefest-60964 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-16T20:41:06.507Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bytefest-60964:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-16T20:41:08.331Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Feb 2021 20:41:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1436","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-16T20:41:08.333Z] > refreshing access token with scopes: []
+[debug] [2021-02-16T20:41:08.333Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-16T20:41:08.529Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 16 Feb 2021 20:41:08 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-16T20:41:08.544Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bytefest-60964 [none]
+[debug] [2021-02-16T20:41:09.107Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bytefest-60964 200
+[debug] [2021-02-16T20:41:09.107Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bytefest-60964 {"projectId":"bytefest-60964","projectNumber":"418745980017","displayName":"bytefest","name":"projects/bytefest-60964","resources":{"hostingSite":"bytefest-60964","storageBucket":"bytefest-60964.appspot.com","locationId":"asia-south1"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'bytefest-60964'...
+[info] 
+[info] i  deploying firestore, hosting 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2021-02-16T20:41:09.120Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-16T20:41:09.120Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-16T20:41:09.260Z] <<< HTTP RESPONSE 200 {"date":"Tue, 16 Feb 2021 20:41:09 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-16T20:41:09.275Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/bytefest-60964:test  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /{document=**} {\n      allow read, write: if\n          request.time < timestamp.date(2021, 3, 13);\n    }\n  }\n}"}]}}
+[debug] [2021-02-16T20:41:10.785Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Feb 2021 20:41:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2021-02-16T20:41:10.790Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/bytefest-60964/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-02-16T20:41:12.894Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Feb 2021 20:41:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-16T20:41:12.897Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/bytefest-60964/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-02-16T20:41:12.897Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/bytefest-60964/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-02-16T20:41:14.211Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Feb 2021 20:41:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-16T20:41:14.213Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/bytefest-60964/rulesets/336c4fcd-eae5-4feb-8136-6caf32dea866  
+ 
+[debug] [2021-02-16T20:41:15.561Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Feb 2021 20:41:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[debug] [2021-02-16T20:41:34.058Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1138:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443

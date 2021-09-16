@@ -1,0 +1,29 @@
+.qcard
+{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.card
+{
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px 0px rgba(120, 120, 120, 0.68);
+  width: 700px;
+  /* height: 200px; */
+  justify-content: center;
+  justify-items: center;
+  margin: 20px;
+}
+.answer
+{
+    padding: 40px;
+    color: rgb(46, 46, 46);
+    font-weight: 500;
+    letter-spacing: 2px; 
+    font-size: 26px;
+    line-height: 40px;
+    /* justify-content: center; */
+    text-align: justify;
+}
+

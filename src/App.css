@@ -1,38 +1,150 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto', sans-serif;
+}
+
+.App
+{
+  margin: 0;
+  padding:0;
+ 
+}
+.header
+{
+  margin: 0;
+}
+
+.landing
+{
+  /* height: 600px; */
+  background-color: #0c2348;
+  width: 100%;
+  /* display: flex; */
+}
+
+.landing > img
+{
+  width: 400px;
+  object-fit: contain;
+  margin-left: 600px;
+}
+
+.enroll > Button
+{
+  /* position: absolute;
+  right: 200px;
+  top: 550px; */
+  text-decoration: none;
+  margin: 30px;
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-bottom: 0;
+  height: 60px !important;
+  width: 150px !important;
+}
+.a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.About
+{
+  margin: 20px;
+}
+
+.about-head
+{
+  justify-content:center;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 30px;
+  font-weight: 400;
+  letter-spacing:10px;
   align-items: center;
+}
+
+.answers
+{
+   
+  margin: 30px;
+}
+
+.about-card
+{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px 0px rgba(120, 120, 120,0.4);
+  /* word-wrap: wrap; */
+  line-break: strict;
+  font-size: 30px;
+}
+
+.ans
+{
+  text-align: justify;
+}
+
+.nav
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.white
+{
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-title
+{
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav-title:hover
+{
+  box-shadow: 0px -3px 5px 0px rgb(0, 0, 0);
+  border-bottom: 3px solid white;
+}
+
+.nt
+{
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}
+
+.selected
+{
+  border-bottom: 5px solid yellow;
+}
+.selected:hover
+{
+  border-bottom: 5px solid yellow;
+}
+
+.active
+{
+  display: block !important;
+}
+
+.disabled
+{
+  display: none;
+}
+.qna
+{
+  display: flex;
+  flex: 0.4 0.6;
+  padding-bottom: 10px;
 }

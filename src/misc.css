@@ -1,0 +1,38 @@
+:root
+{
+    --bgblue: #0C2D48;
+    --red: #E63946;
+}
+
+
+.red 
+{
+  color: var(--red)
+}
+
+.logo > img
+{
+    /* margin: 50px; */
+    /* position: absolute; */
+    width: 800px;
+    object-fit: contain;
+   
+    margin-top: 200px;
+    margin-bottom: 5px;
+}
+
+.logo
+{
+    background-color: #0c2348;
+    padding-left: 40px;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 80px;
+}
+
+.tagline > img
+{
+  width: 400px;
+  object-fit: contain;
+  margin-left: 600px;
+}
